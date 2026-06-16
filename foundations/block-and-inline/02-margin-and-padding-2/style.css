@@ -1,40 +1,56 @@
 body {
   background: #eee;
   font-family: sans-serif;
+  /* MY CHANGES */
   font-size: 16px;
+  /* this font-size change was unnecessary */
 }
 
 .card {
   width: 400px;
   background: #fff;
   margin: 16px auto;
-  border: 1px solid #fff;
+  /* MY CHANGES */
+  padding: 5px;
 }
 
 .title {
   background: #e3f4ff;
+  /* MY CHANGES */
   padding: 10px;
   font-size: 16px;
-  margin: 10px;
+  /* margin: 10px; 
+  this was incorrect, only bottom margin is needed*/
+  margin-bottom: 10px;
 }
 
 .content {
   background: #e3f4ff;
-  padding: 16px;
-  margin: 10px;
+  /* MY CHANGES */
+  padding: 16px 8px;
+  /* needed to add more padding on the left and right */
+  /* margin: 10px;
+  this was incorrect, only bottom margin is needed */
+  margin-bottom: 10px;
 }
 
 .button-container {
   background: #e3f4ff;
+  /* MY CHANGES */
   padding: 16px;
   text-align: center;
-  margin: 10px;
+  /* margin: 10px; 
+  didn't need any margins at all, this just added more white space
+  around the sides of the button*/
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  /* MY CHANGES */
   display: block;
-  margin: auto;
+  margin: 0 auto;
   padding: 10px;
+  /* in the solution, there is more padding to the left and right 
+  but i think my solution is sufficient */
 }
