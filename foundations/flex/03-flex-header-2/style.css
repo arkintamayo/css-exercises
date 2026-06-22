@@ -6,20 +6,29 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  /* MY CHANGES */
+  flex: auto;
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  /* MY CHANGES */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
 }
 
 .profile-image {
   background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  /* MY CHANGES */
 }
 
 .logo {
@@ -27,6 +36,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  /* MY CHANGES */
 }
 
 button {
@@ -35,14 +45,20 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  /* MY CHANGES */
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  /* MY CHANGES */
 }
 
 ul {
   list-style-type: none;
+  /* MY CHANGES */
+  display: flex;
+  margin-right: auto;
+  gap: 16px;
 }
