@@ -16,8 +16,7 @@ body {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   /* MY CHANGES */
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
   gap: 8px;
   padding: 8px;
 }
@@ -59,6 +58,16 @@ ul {
   list-style-type: none;
   /* MY CHANGES */
   display: flex;
-  margin-right: auto;
   gap: 16px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
 }
