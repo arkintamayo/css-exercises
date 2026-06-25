@@ -24,6 +24,9 @@ body {
   /* MY CHANGES */
   padding: 30px;
   display: flex;
+  /* solution featured gap spacing and my code did not
+  so I added it */
+  gap: 16px;
 }
 
 .icon {
@@ -39,7 +42,9 @@ body {
   justify-content: center;
   /* MY CHANGES */
   flex-shrink: 0;
-  align-self: flex-start;
+  /* align-self was in the solution set. but I am unsure as to whether it
+  has an effect on the desired outcome. so I will comment it out. */
+  /* align-self: flex-start; */
 }
 
 .close-button {
@@ -79,20 +84,31 @@ button.cancel {
 .header {
   display: flex;
   justify-content: space-between;
+  /* didn't add alignment that was in the solution. */
+  align-items: center;
+  /* font-weight and font-size were both
+  numbers in the solution. */
   font-weight: bold;
   font-size: larger;
+  /* in the solution, there was
+  a margin-bottom. so I added that. */
+  margin-bottom: 8px;
 }
 
 /* MY CHANGES */
-.container {
+/* this css styling was unnecessary. it was not
+included in the solution code so I commented it out. */
+/* .container {
   display: flex;
   align-items: stretch;
   flex-direction: column;
   gap: 16px;
   margin: 0px 10px;
-}
+} */
 
-.options {
+/* this css styling was unnecessary. it was not
+included in the solution code so I commented it out. */
+/* .options {
   display: flex;
   gap: 8px;
-}
+} */
