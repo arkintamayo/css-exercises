@@ -26,21 +26,26 @@ input {
 }
 
 /* MY CHANGES */
-/* 
-- links in the footer & header pushed to the side
-*/
 
 body {
   display: flex;
   flex-direction: column;
+  /* justify-content and align-items was not in the
+  solution code. but I will leave it. */
   justify-content: space-between;
   align-items: stretch;
 }
 
 ul {
+  /* there was flex display in the solution code.
+  so I added it here. */
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  /* had gap in the solution code. so I
+  added to my code. */
+  gap: 16px;
 }
 
 a {
@@ -50,20 +55,17 @@ a {
 
 .header,
 .footer {
+  display: flex;
+  justify-content: space-between;
   padding: 16px;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
 .footer {
   background: #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 .left-links,
@@ -73,15 +75,21 @@ a {
 }
 
 .content {
+  /* in the solution code, flex: 1 was there.
+  so I added it here. */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* gap was 16px in the solution code. */
   gap: 8px;
 }
 
 button {
-  padding: 8px;
+  /* there was left, right padding in the
+  solution code so I added it here. */
+  padding: 8px 16px;
 }
 
 .input {
