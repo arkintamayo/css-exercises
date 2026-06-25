@@ -24,3 +24,66 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* MY CHANGES */
+/* 
+- links in the footer & header pushed to the side
+*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.header,
+.footer {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer {
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 16px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button {
+  padding: 8px;
+}
+
+.input {
+  margin-bottom: 8px;
+}
