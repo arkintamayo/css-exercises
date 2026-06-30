@@ -30,10 +30,6 @@ body {
   border-radius: 4px;
 }
 
-/* to-do list 
-- sidebar and cards take up all available space above the footer
-- 
-*/
 /* MY CHANGES */
 
 body {
@@ -46,6 +42,8 @@ body {
   align-items: center;
   font-size: 32px;
   font-weight: 900;
+  /* there was 0 padding top and bottom
+  but 16px padding right and left */
   padding-left: 16px;
 }
 
@@ -56,6 +54,8 @@ body {
 }
 
 .sidebar {
+  /* min-width of 300px was not in the solution
+  it was in the card class in the sidebar */
   min-width: 300px;
   flex-shrink: 0;
   padding: 16px;
@@ -63,7 +63,10 @@ body {
 
 .card-sidebar-container {
   display: flex;
+  /* justify-content is not needed after looking at the solution
+  because of the flex-grow */
   justify-content: space-between;
+  /* flex-grow was just flex: 1 in the solution */
   flex-grow: 1;
 }
 
@@ -71,25 +74,38 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 48px;
+  /* gap was 32px not 16px in the solution set */
   gap: 16px;
 }
 
 .card {
+  /* flex-basis was width: 300px in the
+  solution set */
   flex-basis: 300px;
   padding: 16px;
 }
 
 ul {
   list-style: none;
-  display: flex;
+  /* all the flex css styling below was not needed */
+  /* display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: flex-start;
+  align-items: flex-start; */
   margin: 0;
+  /* there was 0 padding in the solution
+  which forces the links to left */
+  padding: 0;
 }
 
 a {
   font-size: 24px;
   color: white;
   text-decoration: none;
+}
+
+/* there was bottom margins in the solution
+for each list component */
+li {
+  margin-bottom: 16px;
 }
